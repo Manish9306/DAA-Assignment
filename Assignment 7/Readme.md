@@ -44,3 +44,52 @@ ALGORITHMS FOR DICTIONARY ADT OPERATIONS
 • Min(D) / Max(D): Return head for Min, and tail for Max.
 • Predecessor(D, x): Return x.prev.
 • Successor(D, x): Return x.next.*/
+
+/*
+
+WORST-CASE TIME COMPLEXITIES (BIG-O) FOR DICTIONARY ADT
+
+
+1. UNSORTED ARRAY
+• Search(D, k):             O(n)   - Requires linear search through the array.
+• Insert(D, x):             O(1)   - Placed at the end (index n) in constant time.
+• Delete(D, x):             O(1)   - Overwrite element at x with last element and decrement size.
+• Min(D) / Max(D):          O(n)   - Must scan all n elements to find min/max.
+• Predecessor / Successor:   O(n)   - Must scan all n elements to find immediate neighbor value.
+
+2. SORTED ARRAY
+• Search(D, k):             O(log n) - Binary Search on sorted range.
+• Insert(D, x):             O(n)   - Binary search + shifting up to n elements to maintain order.
+• Delete(D, x):             O(n)   - Shifting up to n elements left to close the gap.
+• Min(D) / Max(D):          O(1)   - Direct access to D[0] for Min, D[n-1] for Max.
+• Predecessor / Successor:   O(1)   - Direct access to D[idx-1] for Pred, D[idx+1] for Succ.
+
+3. SINGLY LINKED UNSORTED LIST
+• Search(D, k):             O(n)   - Linear traversal from head to tail.
+• Insert(D, x):             O(1)   - Prepended at head in constant time.
+• Delete(D, x):             O(n)   - Must traverse from head to find x's predecessor node.
+• Min(D) / Max(D):          O(n)   - Must scan all n nodes.
+• Predecessor / Successor:   O(n)   - Must scan all n nodes to find relative neighbor key.
+
+4. SINGLY LINKED SORTED LIST
+• Search(D, k):             O(n)   - Linear search (can stop early, but still O(n) worst-case).
+• Insert(D, x):             O(n)   - Linear traversal to find insertion spot + O(1) pointer updates.
+• Delete(D, x):             O(n)   - Must traverse from head to find predecessor node.
+• Min(D) / Max(D):          O(1)   - Head is Min; Tail (if tracked) is Max.
+• Predecessor(D, x):        O(n)   - Cannot traverse backward; must find node p where p.next == x.
+• Successor(D, x):          O(1)   - Direct access via x.next pointer.
+
+5. DOUBLY LINKED UNSORTED LIST
+• Search(D, k):             O(n)   - Linear traversal from head to tail.
+• Insert(D, x):             O(1)   - Inserted at head in constant time.
+• Delete(D, x):             O(1)   - Direct pointer updates using x.prev and x.next.
+• Min(D) / Max(D):          O(n)   - Must scan all n nodes.
+• Predecessor / Successor:   O(n)   - Must scan all n nodes to find relative neighbor key.
+
+6. DOUBLY LINKED SORTED LIST
+• Search(D, k):             O(n)   - Linear search through sorted nodes.
+• Insert(D, x):             O(n)   - Traversal to find correct spot + O(1) 4-pointer adjustments.
+• Delete(D, x):             O(1)   - Direct pointer updates using x.prev and x.next.
+• Min(D) / Max(D):          O(1)   - Head is Min; Tail is Max.
+• Predecessor(D, x):        O(1)   - Direct access via x.prev pointer.
+• Successor(D, x):          O(1)   - Direct access via x.next pointer.*/
