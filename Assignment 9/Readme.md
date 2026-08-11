@@ -84,5 +84,6 @@ TIME COMPLEXITY ANALYSIS FOR MERGING k SORTED ARRAYS (k ARRAYS, EACH OF SIZE n)
 
  GRAPH
  <img width="1620" height="990" alt="17864248729779162153576598132777" src="https://github.com/user-attachments/assets/11eb49c8-810a-4188-9f00-1981ed0be6a3" />
- <img width="1620" height="990" alt="17864248948256373950349583192426" src="https://github.com/user-attachments/assets/60617197-36c5-4cff-a4fc-3040f448dd60" />
+
+<img width="1620" height="990" alt="17864249491697038761592277214533" src="https://github.com/user-attachments/assets/4701f6d0-af2b-4cb6-82b1-3663e383ebf0" />
 
