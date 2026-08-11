@@ -51,3 +51,10 @@ TIME COMPLEXITY BREAKDOWN (BEST, AVERAGE, WORST) FOR MERGE SORT VARIANTS
 • Worst-Case Time:       O(n log n) - O(n log_k n * log_2 k) using a Min-Heap/Priority Queue.
 • Comparison Factor:     Using Min-Heap to pick min among k elements takes O(log k) per move.
 • Recurrence (Worst):    T(n) = kT(n/k) + O(n log k) = O(n log n).*/
+
+GRAPH
+<img width="1620" height="990" alt="17864227018605734709914096934259" src="https://github.com/user-attachments/assets/8e9aab2c-1718-4c8d-8a9f-965535944994" />
+<img width="1620" height="990" alt="17864227352086953068719376141651" src="https://github.com/user-attachments/assets/621d984a-0637-4b1b-867f-51ad54ca1757" />
+<img width="1620" height="990" alt="17864227576551485962566097851492" src="https://github.com/user-attachments/assets/d398ac3d-4bde-444b-a424-57c569a97917" />
+<img width="1620" height="990" alt="17864227753597344982726832778032" src="https://github.com/user-attachments/assets/2f2fa2d3-0457-4ad2-ab93-73965eda4b2f" />
+
