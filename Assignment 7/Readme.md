@@ -93,3 +93,12 @@ WORST-CASE TIME COMPLEXITIES (BIG-O) FOR DICTIONARY ADT
 • Min(D) / Max(D):          O(1)   - Head is Min; Tail is Max.
 • Predecessor(D, x):        O(1)   - Direct access via x.prev pointer.
 • Successor(D, x):          O(1)   - Direct access via x.next pointer.*/
+
+Graphs
+<img width="1800" height="1080" alt="17864221649746214450534470698848" src="https://github.com/user-attachments/assets/157bf2df-3aff-4eba-9203-8800c0fc4057" />
+<img width="1800" height="1080" alt="17864222232745658479107657729870" src="https://github.com/user-attachments/assets/99b5aee1-849b-412f-b1c4-6a70baf3cf79" />
+<img width="1800" height="1080" alt="1786422243236824759444476727665" src="https://github.com/user-attachments/assets/03237137-8b3a-4ab8-af7d-9428c0a6720c" />
+<img width="1800" height="1080" alt="17864222588495577123045386230450" src="https://github.com/user-attachments/assets/18d78bbb-e5fd-42db-b811-7e156f7bc4b9" />
+<img width="1800" height="1080" alt="17864222780481509132320619297989" src="https://github.com/user-attachments/assets/daa65a85-ad43-4176-95d5-4b131c8bbd57" />
+<img width="1800" height="1080" alt="17864223037512626683552739225053" src="https://github.com/user-attachments/assets/31ec7c37-3083-4ee8-9a70-4149d028a36f" />
+<img width="1800" height="1080" alt="17864223183866608888044533622525" src="https://github.com/user-attachments/assets/a22b84c3-c913-436a-a793-ffdcbf2dfed8" />
