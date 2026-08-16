@@ -1,0 +1,11 @@
+NumberOfElements BinaryComparisons TernaryComparisons
+16 9 7
+32 11 8
+64 13 10
+128 15 13
+256 17 14
+512 19 16
+1024 21 17
+2048 23 20
+4096 25 22
+8192 27 23
