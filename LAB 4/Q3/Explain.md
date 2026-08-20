@@ -8,13 +8,13 @@ Given a set $S$ of $n$ integers, a target sum $T$, and an integer $k \ge 1$, det
 ## Algorithm
 
 ### Intuition
-Sorting the array initially in $O(n \log n)$ time enables $O(\log n)$ random-access lookups via **Binary Search**. To find a $k$-subset that sums to $T$, we iterate through all possible combinations of the first $(k - 1)$ elements. For each combination, the required $k$-th element value is fixed as `needed` = $T - \sum \text{chosen}$, which can be looked up in the remaining sorted subarray using binary search.
+Sorting the array initially in $O(n \log n)$ time enables $O(\log n)$ random-access lookups via **Binary Search**. To find a $k$-subset that sums to $T$, we iterate through all possible combinations of the first $(k - 1)$ elements. For each combination, the required $k$-th element value is fixed as `needed = T - current_sum`, which can be looked up in the remaining sorted subarray using binary search.
 
 ### Step-by-Step Procedure
 1. **Sort Array $S$:** Sort $S$ in ascending order using Quick Sort or Merge Sort &rarr; $O(n \log n)$.
 2. **Select $(k - 1)$ Elements:** Use recursion or $(k - 1)$ nested loops to iterate over strictly increasing index combinations ($i_1 < i_2 < \dots < i_{k-1}$):
    - Calculate the partial sum: `current_sum` = $S[i_1] + S[i_2] + \dots + S[i_{k-1}]$
-   - Compute the complement needed: `needed` = $T - \text{current\_sum}$
+   - Compute the complement needed: `needed` = $T$ - `current_sum`
 3. **Binary Search for Complement:**
    - Execute binary search for `needed` in the right subarray $S[i_{k-1} + 1 \dots n - 1]$.
    - If found: **Return `TRUE`** (and the $k$ indices).
