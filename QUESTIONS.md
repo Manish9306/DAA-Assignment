@@ -155,3 +155,33 @@ Address the following theoretical points:
 * Give the worst-case and best-case running times in $\Theta$-notation.
 
 > **Task:** Implement the algorithm in C to validate your theoretical claims.
+
+# Lab 4
+
+### Question 1: Application of Sorting-I (Stable Color Sort)
+Assume that we are given $n$ pairs of items as input, where the first item is a number and the second item is one of three colours (red, blue, or yellow)[cite: 1]. Further assume that the items are sorted by number[cite: 1]. Give an $O(n)$ algorithm to sort the items by colour (all reds before all blues before all yellows) such that the numbers for identical colours stay sorted[cite: 1]. By choosing the proper input representation, write a program in C to validate your algorithm[cite: 1].
+
+---
+
+### Question 2: Application of Sorting-II (Pair Sum Across Two Sets)
+Given two sets $S_1$ and $S_2$ (each of size $n$), and a number $x$, describe an $O(n \log n)$ algorithm for finding whether there exists a pair of elements, one from $S_1$ and one from $S_2$, that add up to $x$[cite: 1]. By choosing the proper input representation, write a program in C to validate your algorithm[cite: 1].
+
+---
+
+### Question 3: Application of Sorting-III ($k$-Sum Search)
+Given a set $S$ of $n$ integers and an integer $T$, give an $O(n^{k-1} \log n)$ algorithm to test whether $k$ of the integers in $S$ add up to $T$[cite: 1]. By choosing the proper input representation, write a program in C to validate your algorithm[cite: 1].
+
+---
+
+### Question 4: Application of Sorting-IV (Maximum Simultaneous Guests)
+A camera at the door tracks the entry time $a_i$ and exit time $b_i$ (assume $b_i > a_i$) for each of the $n$ persons $p_i$ attending a party[cite: 1]. Give an $O(n \log n)$ algorithm that analyses this data to determine the time when the most people were simultaneously present at the party[cite: 1]. Assume that all entry and exit times are distinct (no ties)[cite: 1]. By choosing the proper input representation, write a program in C to validate your algorithm[cite: 1].
+
+---
+
+### Question 5: Application of Sorting-V (Merge Overlapping Intervals)
+Given a list $I$ of $n$ intervals, specified as $(x_i, y_i)$ pairs, return a list where the overlapping intervals are merged[cite: 1]. For $I = \{(1, 3), (2, 6), (8, 10), (7, 18)\}$ the output should be $\{(1, 6), (7, 18)\}$[cite: 1]. Your algorithm should run in worst-case $O(n \log n)$ time complexity[cite: 1]. By choosing a suitable input and output representation, write a program in C to validate your algorithm[cite: 1].
+
+---
+
+### Question 6: Application of Sorting-VI (Point of Maximum Interval Overlap)
+You are given a set $S$ of $n$ intervals on a line, with the $i^{\text{th}}$ interval described by its left and right endpoints $(l_i, r_i)$[cite: 1]. Give an $O(n \log n)$ algorithm to identify a point $p$ on the line that is in the largest number of intervals[cite: 1]. As an example, for $S = \{(10, 40), (20, 60), (50, 90), (15, 70)\}$ no point exists in all four intervals, but $p = 50$ is an example of a point in three intervals[cite: 1]. You can assume an endpoint counts as being in its interval[cite: 1]. By choosing a suitable input and output representation, write a program in C to validate your algorithm[cite: 1].
