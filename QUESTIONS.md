@@ -185,3 +185,31 @@ Given a list $I$ of $n$ intervals, specified as $(x_i, y_i)$ pairs, return a lis
 
 ### Question 6: Application of Sorting-VI (Point of Maximum Interval Overlap)
 You are given a set $S$ of $n$ intervals on a line, with the $i^{\text{th}}$ interval described by its left and right endpoints $(l_i, r_i)$[cite: 1]. Give an $O(n \log n)$ algorithm to identify a point $p$ on the line that is in the largest number of intervals[cite: 1]. As an example, for $S = \{(10, 40), (20, 60), (50, 90), (15, 70)\}$ no point exists in all four intervals, but $p = 50$ is an example of a point in three intervals[cite: 1]. You can assume an endpoint counts as being in its interval[cite: 1]. By choosing a suitable input and output representation, write a program in C to validate your algorithm[cite: 1].
+
+# LAB 5: Sorting & Selection Algorithms
+
+Implementation of selection and sorting algorithms in C, including file I/O operations.
+
+## Contents
+1. **`q1_median_quickselect.c`**: Find Median Without Sorting using QuickSelect.
+2. **`q2_kth_smallest.c`**: Find K-th Smallest Element using QuickSelect.
+3. **`q3_quicksort_file.c`**: QuickSort on $N$ Random Elements with File I/O.
+4. **`q4_heapsort_file.c`**: Heap Sort on $N$ Random Elements with File I/O.
+
+---
+
+## 1. Find Median Without Sorting (QuickSelect)
+- **Time Complexity:** Average $O(N)$, Worst $O(N^2)$
+- **Space Complexity:** $O(1)$ auxiliary
+
+## 2. Find K-th Smallest Element (QuickSelect)
+- **Time Complexity:** Average $O(N)$, Worst $O(N^2)$
+- **Space Complexity:** $O(1)$ iterative in-place
+
+## 3. QuickSort on N Random Elements in a File
+- **Time Complexity:** Average $O(N \log N)$, Worst $O(N^2)$
+- **Space Complexity:** $O(\log N)$ stack space
+
+## 4. Heap Sort on N Random Elements in a File
+- **Time Complexity:** Guaranteed $O(N \log N)$ (Best, Average, Worst)
+- **Space Complexity:** $O(1)$ auxiliary
