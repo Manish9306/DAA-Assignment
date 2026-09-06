@@ -213,3 +213,65 @@ Implementation of selection and sorting algorithms in C, including file I/O oper
 ## 4. Heap Sort on N Random Elements in a File
 - **Time Complexity:** Guaranteed $O(N \log N)$ (Best, Average, Worst)
 - **Space Complexity:** $O(1)$ auxiliary
+
+ # Lab 6: Algorithmic Complexity and Advanced Operations
+
+This repository contains the problem statements and C implementations for Lab 6. The focus is on analyzing the worst-case computational complexity for various 1D array, 2D matrix, convolution, and sorting operations.
+
+---
+
+## Question 1: 1D Array Operations and Complexities
+
+Given an array with $n$ unsorted integer elements, determine the worst-case complexity of the following problems in terms of $n$:
+
+*   **(i)** Finding the maximum element.
+*   **(ii)** Finding the first and second largest elements.
+*   **(iii)** Finding the mean.
+*   **(iv)** Finding the median.
+*   **(v)** Finding the standard deviation.
+*   **(vi)** Finding the mode.
+*   **(vii)** Removing all duplicates.
+*   **(viii)** Reversing the elements of the array.
+*   **(ix)** Partitioning the array with respect to a given random pivot element so that all elements less than the pivot appear after all the elements greater than or equal to the pivot.
+
+**Task:** By choosing the proper input representation, write a program in C to validate your procedures and derive the corresponding complexity analysis.
+
+---
+
+## Question 2: 2D Square Matrix Operations and Complexities
+
+Given square matrices with $n$ rows and $n$ columns, determine the worst-case computational complexity of the following matrix algorithms in terms of $n$:
+
+*   **(i)** Matrix Addition.
+*   **(ii)** Matrix Multiplication.
+*   **(iii)** Finding if the given matrix is a zero matrix.
+*   **(iv)** Finding if the given matrix is a symmetric matrix.
+*   **(v)** Computing the determinant of the given matrix.
+*   **(vi)** Transposing the matrix in situ (in place).
+*   **(vii)** Finding the eigenvalue and eigenvector of the matrix.
+
+**Task:** By choosing the proper input representation, write a program in C to validate your procedures and derive the corresponding complexity analysis.
+
+---
+
+## Question 3: Convolution Operation on Vectors
+
+The convolution of two vectors $A$ and $B$ is a new vector $C$ such that:
+
+$$ C[k] = \sum_{j=0}^{m-1} A[j] * B[k - j] $$
+
+Assuming the lengths of $A$ and $B$ are $m$ and $n$, respectively, and the indexing of the vectors starts from 0, find an $O(n \log n)$ divide and conquer algorithm for this operation. Consider $n \geq m$ for your implementation and analysis.
+
+**Task:** By choosing the proper input representation, write a program in C to validate your algorithm.
+
+---
+
+## Question 4: Sorting via Reversal Procedure
+
+Suppose you are given a permutation $p$ of the integers $1$ to $n$, and seek to sort them to be in increasing order $[1, ..., n]$. The only operation at your disposal is `reverse(p, i, j)`, which reverses the elements of a subsequence $p_i, ..., p_j$ in the permutation. For example, for the permutation $[1, 4, 3, 2, 5]$, one reversal (of the second through fourth elements) suffices to sort it.
+
+1.  **Mathematical Proof:** Show mathematically that it is possible to sort any permutation using $O(n)$ reversals.
+2.  **Algorithm Design:** Now suppose that the cost of `reverse(p, i, j)` is equal to its length (the number of elements in the range, $|j - i| + 1$). Design an algorithm that sorts $p$ in $O(n \log^2 n)$ cost. 
+3.  **Analysis:** Analyze the running time and cost of your algorithm and prove its correctness.
+
+**Task:** Write a program in C to validate your algorithm supporting your analysis.
