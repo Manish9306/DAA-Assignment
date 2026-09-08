@@ -275,3 +275,55 @@ Suppose you are given a permutation $p$ of the integers $1$ to $n$, and seek to 
 3.  **Analysis:** Analyze the running time and cost of your algorithm and prove its correctness.
 
 **Task:** Write a program in C to validate your algorithm supporting your analysis.
+
+# Design and Analysis of Algorithm (DAA) - Lab 07
+
+## 1. Invert the coin-triangle
+Consider an equilateral triangle formed by closely packed pennies or other identical coins. (The centers of the coins are assumed to be at the points of the equilateral triangular lattice.) Design an algorithm to flip the triangle upside down in the minimum number of moves if on each move you can slide one coin at a time to its new position. Give a compact formula for the number of minimum moves.
+
+**Task:** By choosing the proper input representation, write a program in C to validate your procedures and derive the complexity analysis of your algorithm.
+
+---
+
+## 2. Super egg testing experiment
+A firm has invented a super-strong egg. For publicity purposes, it wants to determine the highest floor in a 100-storey building from which such an egg can fall without breaking. The firm has given a tester two identical eggs to experiment with. Of course, the same egg can be dropped multiple times unless it breaks. What is the minimum number of droppings that is guaranteed to determine the highest safe floor in all cases? Design a dynamic programming generalized solution for `E` eggs and `F` floors.
+
+**Task:** By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+---
+
+## 3. Reve's puzzle
+There are eight disks of different sizes and four pegs. Initially, all the disks are on the first peg in order of size, the largest on the bottom and the smallest on the top. The objective is to transfer all the disks to another peg by a sequence of moves. Only one disk can be moved at a time, and it is forbidden to place a larger disk on top of a smaller one. Devise an algorithm that solves the puzzle in 33 moves. Generalize your algorithm for an `n`-disk problem.
+
+**Task:** By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+---
+
+## 4. Security switches
+There is a row of `n` security switches protecting a military installation entrance. The switches can be manipulated as follows:
+1. The rightmost switch may be turned on or off at will.
+2. Any other switch may be turned on or off only if the switch to its immediate right is on and all the other switches to its right, if any, are off.
+3. Only one switch may be toggled at a time.
+
+**Task:** Devise an algorithm to turn off all the switches, which are initially all on, in the minimum number of moves. (Toggling one switch is considered one move.) By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+---
+
+## 5. Hitting a moving target
+A computer game has a shooter and a moving target. The shooter can hit any of `n > 1` hiding spots located along a straight line in which the target can hide. The shooter can never see the target; all he knows is that the target moves to an adjacent hiding spot between every two consecutive shots. Design an algorithm that guarantees hitting the target or prove that no such algorithm exists.
+
+**Task:** If any such algorithm exists, by choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+---
+
+## 6. The best time to be alive
+An editor of *The History of the World Science* wants to find out the time when the largest number of prominent scientists were alive. The prominent scientists are, by definition, the people mentioned in the book with the dates of their birth and death. (No living scientists are included in the book.) Devise an algorithm for this task if it has the book's index as its input. The entries in the index are sorted alphabetically and give the persons' birth and death years. If a person A died the same year person B was born, assume that the former event happened before the latter one.
+
+**Task:** By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+---
+
+## 7. Matrix Chain Multiplication (MCM) problem
+Consider the matrix chain multiplication problem. 
+
+**Task:** Write a program in C to implement the dynamic programming solution of the MCM problem in order to find the minimum number of scalar multiplications involved and the corresponding ordering to obtain the final result.
