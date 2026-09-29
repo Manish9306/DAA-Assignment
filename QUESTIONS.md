@@ -264,6 +264,48 @@ Assuming the lengths of $A$ and $B$ are $m$ and $n$, respectively, and the index
 
 **Task:** By choosing the proper input representation, write a program in C to validate your algorithm.
 
+# Design and Analysis of Algorithm (DAA), Lab-08
+
+## Questions based on Dynamic Programming design paradigm (Difficulty level: medium and hard)
+
+### 1. Minimum Coin Change
+Given an integer array of coin denominations $C=\{c_{1},c_{2},...,c_{n}\}$ representing coins of different values, and an integer target amount V, find the minimum number of coins needed to make up that amount. You may assume an infinite supply of each coin denomination. If that amount of money cannot be made up by any combination of the coins, return -1. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+### 2. Coin Change: Total number of ways
+Given an array of distinct positive integers representing coin denominations $C=\{c_{1},c_{2},...,c_{n}\}$ and a target amount V, find the total number of distinct combinations of coins that sum up to V. You may assume an infinite supply of each coin denomination. The order of coins does not matter (e.g., $1+2$ and $2+1$ are considered the same combination). By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+### 3. Longest Common Subsequence (LCS)
+Given two sequences $X=\langle x_{1},x_{2},...,x_{m}\rangle$ and $Y=\langle y_{1},y_{2},...,y_{n}\rangle$, compute the length of their longest common subsequence and reconstruct the actual subsequence string. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+### 4. Longest Increasing Subsequence
+Given an integer array $A=[a_{0},a_{1},...,a_{n-1}]$, find the length of the longest subsequence such that all elements of the subsequence are strictly increasing. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+### 5. Maximum Sum Increasing Subsequence
+Given an array of n positive integers $A=[a_{0},a_{1},...,a_{n-1}]$, find the maximum possible sum of a strictly increasing subsequence. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+### 6. Edit Distance with Traceback Information
+Given two strings A of length m and B of length n, compute the minimum number of operations (insertions, deletions, or substitutions) required to transform A into B, and print the traceback result. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+### 7. Rod Cutting with Reconstruction
+Given a rod of length n inches and an array of prices $P=[p_{1},p_{2},...,p_{n}]$, where $p_{i}$ denotes the market price of a rod piece of length i inches, determine:
+* (i) The maximum revenue obtainable by cutting up the rod and selling the pieces.
+* (ii) The exact lengths of the pieces that constitute the optimal decomposition (reconstruction).
+
+Cuts are integral and can be made in any combination (including leaving the rod uncut), and the sum of the piece lengths must equal n. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+### 8. Optimal Binary Search Trees (OBST)
+Given a set of n distinct sorted keys $K=\langle k_{1},k_{2},...,k_{n}\rangle$ with search probabilities $p_{1},p_{2},...,p_{n}$, and $n+1$ dummy keys $d_{0},d_{1},...,d_{n}$ representing searches not in K with probabilities $q_{0},q_{1},...,q_{n}$, find the minimum expected search cost of a binary search tree. By choosing the proper input representation, write a program in C to validate your procedures and derive the complexity analysis of your algorithm.
+
+### 9. Collatz Conjecture
+(Open Unsolved Problem): The Collatz Conjecture (also known as the 3n+1 problem or Ulam conjecture) defines a recurrence relation for any strictly positive integer n:
+
+$$T(n) = \begin{cases} n/2 & \text{if } n \text{ is even} \\ 3n+1 & \text{if } n \text{ is odd} \end{cases}$$
+
+The sequence repeatedly applies this function until $n=1$. Although unproven and still an open problem, it is conjectured that the sequence reaches 1 for all positive integers. Write a modular C program to analyse the trajectory of a user-provided starting value $n\ge1$ and across an interval [a, b].
+
+*Reference: Collatz conjecture paths for 5000 random starting points below $10^{6}$ (wiki).*
+
+**Objective to give problem 9 as an assignment:** To implement iterative control structures, functional decomposition, dynamic memory allocation/pointers, and integer overflow handling in C by simulating and analysing arithmetic trajectories defined by the Collatz Conjecture. Most importantly, to experience a so simple yet profound problem which is still open!! The simplicity of this problem is deceptive. The reason it remains open may lie in foundational issues in number theory, dynamical systems, and computability.
 ---
 
 ## Question 4: Sorting via Reversal Procedure
