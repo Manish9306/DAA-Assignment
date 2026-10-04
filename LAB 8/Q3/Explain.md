@@ -1,13 +1,9 @@
-## Question 3: Longest Common Subsequence (LCS)
-
-```markdown
 ### 3. Longest Common Subsequence (LCS)
 
 #### Problem Statement
-Given two sequences $X = \langle x_1, x_2, \dots, x_m \rangle$ and $Y = \langle y_1, y_2, \dots, y_n \rangle$, compute the length of their longest common subsequence and reconstruct the actual subsequence string.
+Given two sequences X = <x1, x2, ..., xm> and Y = <y1, y2, ..., yn>, compute the length of their longest common subsequence and reconstruct the actual subsequence string.
 
 #### Algorithm
-```text
 LCS(X, Y, m, n):
 1. Create 2D table dp[0..m][0..n]
 2. Initialize dp[i][0] = 0 for all 0 <= i <= m
@@ -33,3 +29,7 @@ Reconstruct(dp, X, m, n):
      Else:
        j = j - 1
 3. Return result
+
+#### Complexity Analysis
+- Time Complexity: O(m * n) to compute the DP table and O(m + n) for reconstruction.
+- Space Complexity: O(m * n) to store the DP table.
