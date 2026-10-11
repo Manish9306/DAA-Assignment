@@ -369,3 +369,40 @@ The sequence repeatedly applies this function until $n=1$. Although unproven and
 
 **Objective to give problem 9 as an assignment:** To implement iterative control structures, functional decomposition, dynamic memory allocation/pointers, and integer overflow handling in C by simulating and analysing arithmetic trajectories defined by the Collatz Conjecture. Most importantly, to experience a so simple yet profound problem which is still open!! The simplicity of this problem is deceptive. The reason it remains open may lie in foundational issues in number theory, dynamical systems, and computability.
 ---
+
+# Design and Analysis of Algorithm (DAA), Lab-09
+
+## Questions based on Greedy Design Paradigm
+
+### 1. Fractional Knapsack with Deterioration Rate
+You have n items with base values vi, weights wi, and decay rates lambda_i > 0[cite: 3]. If an item is consumed at time t, its effective value density decays to (vi/wi) - lambda_i * t[cite: 3]. Knapsack capacity is W[cite: 3]. Determine the optimal scheduling order and fractional choices to maximise total value[cite: 3]. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm[cite: 3].
+
+### 2. Huffman Coding
+Given symbol frequencies, construct a prefix-free binary code of minimum expected length, and output the canonical Huffman codebook (where codes are ordered lexicographically by length)[cite: 4]. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm[cite: 4].
+
+### 3. Minimum Initial Fuel (Reverse Greedy)
+A vehicle needs to reach the target D starting with fuel F[cite: 5]. Along the way are stations (di, fi) (distance from origin and refuel amount)[cite: 5]. What is the minimum number of refuelling stops required to reach the target?[cite: 5] By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm[cite: 5].
+
+### 4. Minimum Cost to Connect Sticks
+You have sticks of lengths L1, L2, ..., Ln[cite: 6]. Connecting two sticks of lengths x and y costs x + y, resulting in a single stick of length x + y[cite: 6]. Find the minimum total cost to connect all sticks into one[cite: 6]. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm[cite: 6].
+
+### 5. Candy Distribution Problem (Bi-directional Slope Greedy)
+n children stand in a line, each assigned a rating[cite: 7]. Each child must get at least one candy[cite: 7]. Children with a higher rating than their immediate neighbours must get more candies than their neighbours[cite: 7]. Find the minimum total number of candies needed[cite: 7]. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm[cite: 7].
+
+### 6. Reorganise String with K-Distance Apart
+Given a string S and an integer K, rearrange S such that the same characters are at least distance K apart[cite: 8]. If impossible, return an empty string[cite: 8]. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm[cite: 8].
+
+### 7. Minimise Deviation in Array (Two-Way Greedy with Max-Heap)
+Given an array of positive integers, you can perform two operations: multiply any odd element by 2, or divide any even element by 2[cite: 9]. The deviation is (max(A) - min(A))[cite: 9]. Minimise the deviation after any number of operations[cite: 9]. By choosing the proper input representation, write a program in C to validate your procedures and derive the complexity analysis of your algorithm[cite: 9].
+
+### 8. Minimum Number of Meeting Rooms
+Given an array of meeting time intervals consisting of start and end times [[s1, e1], [s2, e2], ...], find the minimum number of conference rooms required[cite: 10]. By choosing the proper input representation, write a program in C to validate your procedures and derive the complexity analysis of your algorithm[cite: 10].
+
+### 9. Hu-Tucker Greedy Simulation*
+Given an ordered sequence of weights w1, w2, ..., wn, construct an optimal alphabetic binary search tree or merge pattern that maintains the strict in-order sequence of indices while minimizing sum(wi * depth(i))[cite: 11]. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm[cite: 11].
+
+### 10. Greedy Superstring Conjecture (Open Unsolved Problem)
+Given a set of n strings S = {s1, s2, ..., sn}, find the shortest single string that contains every si as a substring[cite: 12]. You are advised to explore more on this problem to develop an insight[cite: 12].
+
+**Background and current status of the conjecture:**
+The conjecture formulated nearly four decades ago hypothesised that the classic greedy algorithm (repeatedly merging the pair with the maximum overlap) always yields a superstring no more than twice the length of the optimal solution (2-approximation)[cite: 12]. A September 2026 paper titled "Disproving the Greedy Superstring Conjecture" published on ArXiV demonstrated that the approximation ratio for instances where input strings have an even length k >= 10 is at least (9k + 2) / (4k + 4), establishing a limit of 9/4 (2.25) as k -> infinity[cite: 12]. This conclusively disproves the long-standing 2-approximation claim[cite: 12].
