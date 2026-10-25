@@ -409,12 +409,6 @@ The conjecture formulated nearly four decades ago hypothesised that the classic 
 
 # Design and Analysis of Algorithm (DAA) - Lab 10
 
-**Program:** BTech (CS-B and CE), 3rd Semester  
-**Date:** October 13, 2026  
-**Instructor:** Dr. Ajaya Kumar Dash  
-**Topics:** Graphs and their representations, Disjoint Set Data Structure / Union-Find Data Structure / Disjoint Set Union (DSU), and Connected Components of a graph.  
-**Difficulty Level:** Medium and Hard  
-
 ---
 
 ## Questions
