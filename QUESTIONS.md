@@ -439,3 +439,60 @@ Given a vertex-weighted undirected graph, vertices are sequentially deleted one 
 Given a permutation `A` of numbers `1...n`, and a list of allowable pairwise swaps `(u, v)` forming edges in an undirected graph, find the lexicographically smallest permutation achievable through any number of valid swaps. 
 
 *By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.*
+
+# Design and Analysis of Algorithm (DAA) - Lab 11
+
+## 1. Shortest Path on Parity-Constrained Graphs via 0-1 BFS
+
+You are given a directed graph `G = (V, E)`, a designated source vertex `S ∈ V` and an extra penalty cost `C >= 0`. Every directed edge `(u, v) ∈ E` has a weight `w(u, v) ∈ {0, 1}`.
+
+For any path `P` from `S` to a vertex `v`:
+1. Let `W(P)` denote the sum of all edge weights along `P`.
+2. Let `k1(P)` denote the total count of weight-1 edges traversed in `P`.
+3. The effective cost of path `P` is defined as:
+   * `Cost(P) = W(P)` if `k1(P)` is even.
+   * `Cost(P) = W(P) + C` if `k1(P)` is odd.
+
+**Objective:** 
+For every vertex `v ∈ V` compute the minimum possible `Cost(P)` among all valid paths from `S` to `v`. If a node `v` cannot be reached from `S`, report that it is unreachable. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+---
+
+## 2. Multi-Source BFS for Radius-Constrained Voronoi Cell Partitioning
+
+You are given:
+* An unweighted, undirected graph `G = (V, E)`.
+* A set of `K` designated hub vertices `H = {h1, h2, ..., hK} ⊆ V`, indexed from 1 to `K`.
+* An integer radius threshold `R > 0`.
+
+Let `dist(u, v)` denote the shortest path distance (minimum number of edges) between vertices `u` and `v` in `G`.
+
+For every vertex `v ∈ V` assign an ownership label `owner[v] ∈ {1, 2, ..., K} ∪ {-1}` according to the following rules:
+1. **Distance Metric:** Find the distance from `v` to each service hub: `di = dist(v, hi)` for all `i ∈ {1, ..., K}`. Let `d_min(v) = min(di)` for `1 <= i <= K`.
+2. **Reachability Threshold (R):** If `d_min(v) > R`, vertex `v` lies outside the service coverage area. Set `owner[v] = -1`.
+3. **Closest Hub Assignment:** If `d_min(v) <= R` assign `v` to the hub `hi` that minimizes `di`.
+4. **Deterministic Tie-Breaking:** If multiple hubs achieve the exact same minimum distance `d_min(v)`, choose the hub with the smallest numerical index `i`.
+
+**Objective:** 
+Output the array `owner[1...V]` containing the assigned hub index (or -1 if unassigned) and the corresponding shortest distance to that hub for every vertex. By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
+
+---
+
+## 3. Bidirectional BFS for Shortest Transformation Sequence in a Word Graph
+
+You are given:
+* A dictionary `D` containing `N` unique words, where every word has the exact same length `L`.
+* A starting word `A` and a target word `B`, both of length `L`.
+
+A valid mutation step consists of changing exactly one character of a word such that the resulting word exists in dictionary `D`. A transformation sequence from `A` to `B` is an ordered sequence of words: `W0, W1, W2, ..., Wk` such that:
+1. `W0 = A` and `Wk = B`.
+2. Every intermediate word `Wi ∈ D` for all `1 <= i <= k`. (Note: whether `A` must initially be in `D` is typically specified by the input constraints, but `B` must always be in `D`.)
+3. For every adjacent pair `(W_i-1, Wi)`, the two words differ by exactly one character (i.e., their Hamming distance is 1).
+
+**Objective:** 
+Compute the minimum number of mutations `k` required to transform `A` into `B`. If `A` cannot be transformed into `B` through valid intermediate words in `D`, return -1 (or report that no valid path exists). Keep in mind to consider the following constraints for this problem during implementation:
+* `N < 10^5` (number of dictionary words)
+* `L <= 10` (length of each word)
+* All words consist solely of lowercase English letters ('a' to 'z').
+
+By choosing the proper input representation, write a program in C to validate your algorithm and derive the complexity analysis of your algorithm.
